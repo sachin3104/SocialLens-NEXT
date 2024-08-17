@@ -9,6 +9,7 @@ const socialFormats = {
     "Twitter Post (16:9)": { width: 1200, height: 675, aspectRatio: "16:9" },
     "Twitter Header (3:1)": { width: 1500, height: 500, aspectRatio: "3:1" },
     "Facebook Cover (205:78)": { width: 820, height: 312, aspectRatio: "205:78" },
+    "LinkedIn Cover (4:1)": {width: 1584, height: 396, aspectRatio: "4:1"},
   };
 
   type SocialFormat = keyof typeof socialFormats;
@@ -57,9 +58,12 @@ const socialFormats = {
     const handleDownload = () => {
       if(!imageRef.current) return;
 
+      //trying to access a url
       fetch(imageRef.current.src)
+      //converting url into blob
       .then((response) => response.blob())
       .then((blob) => {
+        //since each image has an in memory data so here we are creating an image out of it.
           const url = window.URL.createObjectURL(blob)
           const link = document.createElement("a");
           link.href = url;
@@ -74,7 +78,7 @@ const socialFormats = {
       })
 
     }
-    
+
     return (
       <div className="container mx-auto p-4 max-w-4xl">
         <h1 className="text-3xl font-bold mb-6 text-center">
