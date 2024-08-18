@@ -98,10 +98,10 @@ const socialFormats = {
                 className="file-input file-input-bordered file-input-primary w-full"
               />
             </div>
-
             {isUploading && (
               <div className="mt-4">
                 <progress className="progress progress-primary w-full"></progress>
+                <span className="label-text"> big image sizes takes some time to upload...</span>
               </div>
             )}
 
