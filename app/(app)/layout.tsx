@@ -31,7 +31,7 @@ export default function AppLayout({
   const { user } = useUser();
 
   const handleLogoClick = () => {
-    router.push("/");
+    router.push("/home");
   };
 
   const handleSignOut = async () => {
@@ -60,7 +60,7 @@ export default function AppLayout({
               </label>
             </div>
             <div className="flex-1">
-              <Link href="/" onClick={handleLogoClick}>
+              <Link href="/home" onClick={handleLogoClick}>
                 <div className="btn btn-ghost normal-case text-2xl font-bold tracking-tight cursor-pointer">
                   Cloudinary Showcase
                 </div>
