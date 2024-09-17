@@ -36,7 +36,7 @@ function VideoUpload() {
         });
             if (response.status === 200) {
                 toast.success("Video uploaded successfully!");
-                router.push("/");
+                router.push("/home");
             } else {
                 toast.error("Failed to upload video. Please try again.");
             }
