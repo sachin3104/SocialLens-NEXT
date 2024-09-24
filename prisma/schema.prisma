@@ -23,4 +23,5 @@ model Video {
     duration       Float
     createdAt      DateTime @default(now())
     updatedAt      DateTime @updatedAt
+    userId         String   
 }
