@@ -15,7 +15,7 @@ export default function Home() {
   <header
     className="hero min-h-screen"
     style={{
-      background: "linear-gradient(90deg, rgba(22,41,82,1) 5%, rgba(7,5,41,1) 53%, rgba(8,14,61,1) 99%)",
+      background: "linear-gradient(135deg, rgba(5,5,5,1) 0%, rgba(20,10,50,1) 40%, rgba(0,0,0,1) 100%)",
     }}
   >
     <div className="hero-overlay bg-opacity-60"></div>
