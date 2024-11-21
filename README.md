@@ -7,7 +7,6 @@ This is a profile photo changer application built using Next.js and styled with 
 ## Features
 
 - **Authentication**: Secure user authentication using Clerk.
-- **Platform Integration**: Users can link and manage multiple social media accounts.
 - **Profile Photo Update**: Users can easily change their profile photo for different platforms.
 - **Responsive Design**: Styled with DaisyUI for a modern and accessible user interface.
 
@@ -23,11 +22,11 @@ This is a profile photo changer application built using Next.js and styled with 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/photo-changer.git
+   git clone https://github.com/sachin3104/SocialLens-NEXT.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd photo-changer
+   cd SocialLens-NEXT
    ```
 3. Install dependencies:
    ```bash
